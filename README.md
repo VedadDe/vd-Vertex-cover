@@ -20,12 +20,12 @@ barem jedan od cvorova u ili w.
 Vec sad je jasno da koristimo rekurzijzu, i to dva puta pri svakoj iteraciji.
 algoritam je naredni:
  + vertexCover(Graf G, int k)
- + Ako G nema ivica, tada vra´ca true
+ + Ako G nema ivica, tada vraća true
  + ako k = 0 onda vrati false
- + nek su u i w Vrhovi G, i ˇcine neku granu
+ + nek su u i w Vrhovi G, i čine neku granu
  + ako VertexCoverFPT (G-u, k-1) onda vrati true
  + ako VertexCoverFPT (G-w, k-1) onda vrati true
- + inace vrati false
+ + inače vrati false
 
 Ovaj algoritam je očito tačan kada je k = 0. Vidimo za k veće od 0;
 Ako G ima pokrivač C veličine k, tada ovaj pokrivač sadrži barem jedan
