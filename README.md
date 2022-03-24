@@ -1,5 +1,20 @@
 # is-Vertex-cover
 
+
+
+Poznato je da je VERTEX COVER NP-kompletan problem. Međutim, ovaj
+problem spada u tzv. fixedparameter tractable (FPT) probleme, što znači da
+je moguće ispitati da li postoji VERTEX COVER veličine u vremenu *,
+gdje je konstanta koja ne zavisi od ( je veličina problema, u ovom slučaju
+broj vrhova grafa). Implementirati algoritam koji u vremenu 2 ispituje da
+li postoji vertex cover veličine n. Algoritam radi na način da odabere neku
+granu grafa te onda ispituje postoji li vertex cover veličine 1 za
+grafove i . Potrebno je generisati barem 5 različitih grafova i na njima
+testirati rješenje. Graf čiji je vertex cover manji ili jednak 15 (a broj vrhova
+relativno veliki) možete kreirati na način da se prilikom generisanja grana
+grafa osigurate da je jedan kraj grane među početnih (ili krajnjih) 15 čvorova.
+
+
 Vertex Cover Za svaki čvor uw od G, bilo koji Vertex-Cover od G sadrži
 barem jedan od cvorova u ili w.
 Vec sad je jasno da koristimo rekurzijzu, i to dva puta pri svakoj iteraciji.
